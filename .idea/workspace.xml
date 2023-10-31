@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b4c56fb-b7d3-4215-a782-09f675601450" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/Television.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/client/TelevisionClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/Tuner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/Tuner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01.7/Lab01.7.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02.1/Lab02.1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02.3/Lab02.3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.1/Lab03.1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.2/Lab03.2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.3/Lab03.3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab04.1/Lab04.1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/Television.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/Television.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/client/TelevisionClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/client/TelevisionClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab01.2/com/entertainment/Television.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab01.2/com/entertainment/Television.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab01.2/com/entertainment/client/TelevisionClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab01.2/com/entertainment/client/TelevisionClient.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +69,14 @@
       <option name="presentableId" value="Default" />
       <updated>1698770990398</updated>
     </task>
+    <task id="LOCAL-00001" summary="Lab02.1: complete">
+      <created>1698779791515</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698779791515</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -86,5 +84,7 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Lab02.1: complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab02.1: complete" />
   </component>
 </project>
