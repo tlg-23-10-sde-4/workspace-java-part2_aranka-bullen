@@ -46,34 +46,59 @@ public class Television {
         tuner.setChannel(channel);
     }
 
-    @Override
-    public int hashCode(){
-        /*
-         *This is a poorly written has function, because it easily yields "hash collisions."
-         * A hash collisionis when "different" objects have the same hash code (just by coincident).
-         */
-         //return getBrand().length() + getVolume();
-
-         //Instead, we rely on Objects.has() to give us a "scientifically correct" hash function.
-        return Objects.hash(getBrand(), getVolume());
-    }
-
+    /*
     @Override
     public boolean equals(Object obj) {
-        boolean result = false;
+        //
+        if (this == obj) return true;
 
-        //proceed  only if 'obj' is really referencing a Television object.
-        if(obj instanceof Television) {
+        if (obj == null || this.getClass() != obj.getClass()) return false;
+        Television that = (Television) obj;
 
-            //safely downcast 'obj' to more specific reference type Television
-            Television other = (Television) obj;
-
-            // do the checks: business equality is defined by brand, volume being the same
-            result= Objects.equals(this.getBrand(), other.getBrand()) &&  // this a null safe method (Object.equals())
-                    this.getVolume()==other.getVolume();  // primitives cannot be null
-        }
-        return result;
+        return volume == that.volume && Objects.equals(brand, that.brand);
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(brand, volume);
+    }
+    */
+
+
+        @Override
+        public int hashCode(){
+            System.out.println("hashcode calle");
+            /*
+             *This is a poorly written has function, because it easily yields "hash collisions."
+             * A hash collision is when "different" objects have the same hash code (just by coincident).
+             */
+             //return getBrand().length() + getVolume();
+
+             //Instead, we rely on Objects.has() to give us a "scientifically correct" hash function.
+            return Objects.hash(getBrand(), getVolume());
+        }
+
+
+        @Override
+        public boolean equals(Object obj) {
+            System.out.println("equals called");
+            boolean result = false;
+
+            //proceed  only if 'obj' is really referencing a Television object.
+            // use getClass for exact match and instanceof for IS-A relationship match
+            //== is valid when comparing Class objects and Enums, anywhere else .equals() is the better option.
+
+            if(this.getClass() == obj.getClass()) {
+
+                //safely downcast 'obj' to more specific reference type Television
+                Television other = (Television) obj;
+
+                // do the checks: business equality is defined by brand, volume being the same
+                result= Objects.equals(this.getBrand(), other.getBrand()) &&  // this a null safe method (Object.equals())
+                        this.getVolume()==other.getVolume();  // primitives cannot be null
+            }
+            return result;
+        }
 
     //toString
     public String toString() {
