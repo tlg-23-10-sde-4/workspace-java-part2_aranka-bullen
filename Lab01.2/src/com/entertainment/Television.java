@@ -121,15 +121,15 @@ public class Television implements Comparable<Television> {
 
         if (result == 0) {  //tied on brand, i.ee, they have the same brand
             result = Integer.compare(this.getVolume(), other.getVolume());
-
+        }
 
             return result;
-        }
+
+    }
 
         @Override
         public String toString() {
-            return String.format("%s [brand=%s, volume=%s, currentChannel=%s]",
-                    getClass().getSimpleName(), getBrand(), getVolume(), getCurrentChannel());
+            return String.format("%s [brand=%s, volume=%s, currentChannel=%s]\n",
+                    getClass().getSimpleName(),getBrand(), getVolume(), getCurrentChannel());
         }
     }
-}
