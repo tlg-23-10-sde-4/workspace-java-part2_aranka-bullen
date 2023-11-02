@@ -1,31 +1,31 @@
 package com.entertainment.client;
 
 import com.entertainment.Television;
-
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 class TelevisionClient {
+
     public static void main(String[] args) {
-        Television tv = new Television("RCA", 30);
+        Television tvA = new Television("Sony", 50);
+        Television tvB = new Television("Sony", 50);
+        Television tvC = new Television("Samsung", 32);
+        Television tvD = new Television("LG", 12);
 
-        Television tv2 = new Television(); //NullPointer Exception should not flare up
-        tv2.changeChannel(25);
-        System.out.println(tv2);
+        System.out.println("tvA == tvB: "      + (tvA == tvB));     // returns false because of ==
+        System.out.println("tvA.equals(tvB): " + tvA.equals(tvB));  // this is true now
+        System.out.println();
 
+        Set<Television> tvs = new TreeSet<>();
+        tvs.add(tvA);
+        tvs.add(tvB);  // rejected as a duplicate
+        tvs.add(tvC);
+        tvs.add(tvD);
 
-        Television tv3 = new Television("RCA", 30);
-        //System.out.println("tv == tv3 " + (tv==tv3));
-        //System.out.println("tv.equals(tv3)" + tv.equals(tv3));
-
-
-       // System.out.println(tv.hashCode());  //745160567
-       // System.out.println(tv3.hashCode());   //610984013
-        //System.out.println();
-
-        Set<Television> tvs = new HashSet<>();
-        tvs.add(tv);
-        tvs.add(tv3);
-        System.out.println("the size if the set is: " + tvs.size());
+        System.out.println("The size of the set is: " + tvs.size());
+        for (Television tv : tvs) {
+            System.out.println(tv);
+        }
     }
 }
