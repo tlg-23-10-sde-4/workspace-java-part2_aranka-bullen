@@ -10,13 +10,13 @@ class DuckRacer {
     private String name;
     private final Collection<Reward> rewards = new ArrayList<>();
 
-    public DuckRacer(int id, String name){
+    public DuckRacer(int id, String name) {
         this.id = id;
         setName(name);
     }
 
     //business-action methods
-    public void win(Reward reward){
+    public void win(Reward reward) {
         rewards.add(reward);
     }
 
@@ -39,11 +39,11 @@ class DuckRacer {
         //return List.copyOf(rewards);
 
         //Method to call snapshot collection WITHOUT re-calling for new update
-       return Collections.unmodifiableCollection(rewards);
+        return Collections.unmodifiableCollection(rewards);
     }
 
     //derived property
-    public int getWins(){
+    public int getWins() {
         return rewards.size();
     }
 

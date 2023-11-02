@@ -34,9 +34,5 @@ class DuckRacerTest {
         System.out.println(rewards);  //should see 6 without having to re-calling the collection
 
 
-
-
-
-
     }
 }
