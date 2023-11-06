@@ -5,9 +5,10 @@
       <change afterPath="$PROJECT_DIR$/Lab03.3/Lab03.3.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Lab03.3/test/com/entertainment/TelevisionTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Lab04.1-Extra/test/com/javatunes/catalog/InMemoryCatalogTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scratch/src/com/training/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scratch/src/com/training/Instructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scratch/src/com/training/Projector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab05.1/src/com/javatunes/corp/client/TaxClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab05.1/src/gov/irs/IRS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab05.1/src/gov/irs/IRSEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab05.1/test/gov/irs/IRSEnumTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/SalariedEmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/SalariedEmployeeTest.java" afterDir="false" />
@@ -17,6 +18,14 @@
       <change beforePath="$PROJECT_DIR$/Lab04.1-Extra/src/com/javatunes/catalog/test/InMemoryCatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04.1-Extra/src/com/javatunes/catalog/InMemoryCatalogTestMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab04.1/test/com/entertainment/catalog/CatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04.1/test/com/entertainment/catalog/CatalogTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab04.2/src/com/javatunes/product/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04.2/src/com/javatunes/product/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.1/Lab05.1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.1/Lab05.1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.1/src/com/javatunes/corp/Corporation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.1/src/com/javatunes/corp/Corporation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.1/src/gov/irs/TaxPayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.1/src/gov/irs/TaxPayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.1/src/gov/irs/enumtype/IRSEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.1/src/gov/irs/holder/IRS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.1/test/gov/irs/enumtype/IRSEnumTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.1/test/gov/irs/holder/IRSTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Scratch/org/veggies/RadishSortTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Scratch/org/veggies/RadishSortTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +38,7 @@
         <option value="Enum" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -64,8 +74,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lab04.2" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lab05.1" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
@@ -80,7 +90,7 @@
       <recent name="com.javatunes.personnel" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.TaxClient">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.training.Client" />
       <module name="Scratch" />
@@ -94,65 +104,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CatalogTest.findBYBrand_shouldReturnPopulatedMap_whenBrandsPassed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab04.1" />
+    <configuration name="TaxClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.corp.client.TaxClient" />
+      <module name="Lab05.1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.entertainment.catalog.*" />
+          <option name="PATTERN" value="com.javatunes.corp.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.entertainment.catalog" />
-      <option name="MAIN_CLASS_NAME" value="com.entertainment.catalog.CatalogTest" />
-      <option name="METHOD_NAME" value="findBYBrand_shouldReturnPopulatedMap_whenBrandsPassed" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IRSEnumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab05.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gov.irs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gov.irs" />
+      <option name="MAIN_CLASS_NAME" value="gov.irs.IRSEnumTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IRSEnumTest.classload_triggersInstanceCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab05.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gov.irs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gov.irs" />
+      <option name="MAIN_CLASS_NAME" value="gov.irs.IRSEnumTest" />
+      <option name="METHOD_NAME" value="classload_triggersInstanceCreation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalariedEmployeeTest.hashCode_shouldReturnTrue_whenAllPropertiesSame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.2" />
+    <configuration name="IRSEnumTest.getInstance_shouldReturnSameInstance_everyTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab05.1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatunes.personnel.*" />
+          <option name="PATTERN" value="gov.irs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.SalariedEmployeeTest" />
-      <option name="METHOD_NAME" value="hashCode_shouldReturnTrue_whenAllPropertiesSame" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TelevisionTest.compareTo_shouldReturnTrue_whenSame_" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.entertainment.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.entertainment" />
-      <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionTest" />
-      <option name="METHOD_NAME" value="compareTo_shouldReturnTrue_whenSame_" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TelevisionTest.compareTo_shouldReturnTrue_whenSame_Not" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.entertainment.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.entertainment" />
-      <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionTest" />
-      <option name="METHOD_NAME" value="compareTo_shouldReturnTrue_whenSame_Not" />
+      <option name="PACKAGE_NAME" value="gov.irs" />
+      <option name="MAIN_CLASS_NAME" value="gov.irs.IRSEnumTest" />
+      <option name="METHOD_NAME" value="getInstance_shouldReturnSameInstance_everyTime" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TaxClient" />
+        <item itemvalue="JUnit.IRSEnumTest.classload_triggersInstanceCreation" />
+        <item itemvalue="JUnit.IRSEnumTest.getInstance_shouldReturnSameInstance_everyTime" />
+        <item itemvalue="JUnit.IRSEnumTest" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="JUnit.CatalogTest.findBYBrand_shouldReturnPopulatedMap_whenBrandsPassed" />
-        <item itemvalue="JUnit.SalariedEmployeeTest.hashCode_shouldReturnTrue_whenAllPropertiesSame" />
-        <item itemvalue="JUnit.TelevisionTest.compareTo_shouldReturnTrue_whenSame_Not" />
-        <item itemvalue="JUnit.TelevisionTest.compareTo_shouldReturnTrue_whenSame_" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699040371238</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Classloader demo (Instructor and Projector)">
+      <created>1699290323172</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1699290323172</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,7 +283,8 @@
     <MESSAGE value="Iteration 1: reward and duck-racer" />
     <MESSAGE value="Lab03.2: Pay and PayTaxes assertions" />
     <MESSAGE value="Lab04.1: Initial work [2023-11-03 @ 3:30 EST]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab04.1: Initial work [2023-11-03 @ 3:30 EST]" />
+    <MESSAGE value="Classloader demo (Instructor and Projector)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Classloader demo (Instructor and Projector)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
