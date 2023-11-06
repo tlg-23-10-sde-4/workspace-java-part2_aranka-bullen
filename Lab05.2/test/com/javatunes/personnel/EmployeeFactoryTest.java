@@ -1,6 +1,8 @@
 package com.javatunes.personnel;
 
 import static org.junit.Assert.*;
+
+import java.sql.Date;
 import java.util.HashMap;
 import java.util.Map;
 import org.junit.Before;
@@ -27,18 +29,19 @@ public class EmployeeFactoryTest {
    * 1. yes, we have redundant setup code, and even some redundant test code (to keep it simple)
    * 2. this is representative of how UIs send user input data to an application:
    *    - Java Swing UI components all return their input data as strings
-   *    - in webapps, HTTP requests from browsers (e.g., a form submission) carry all values as strings
+   *    - in webapps, HTTP requests from browsers (e.g., a form submission)
+   *      carry all values as strings
    */
   @Before
   public void init() {
     seMap = new HashMap<>();
-    seMap.put("type",     "SE");
+    seMap.put("type",     "SE"); //indicator
     seMap.put("name",     "Jackie");
     seMap.put("hireDate", "1990-08-24");
     seMap.put("salary",   "50000.0");
     
     heMap = new HashMap<>();
-    heMap.put("type",     "HE");
+    heMap.put("type",     "HE"); //indicator
     heMap.put("name",     "Jackie");
     heMap.put("hireDate", "1990-08-24");
     heMap.put("rate",     "50.0");
@@ -51,24 +54,59 @@ public class EmployeeFactoryTest {
    *   assertEquals(SalariedEmployee.class, emp.getClass())
    */
   @Test
-  public void testCreateEmployeeSalaried() {
+  public void createEmployee_shouldReturnSalariedEmployee_whenTypeSE() {
     // TODO
+    Employee emp = EmployeeFactory.createEmployee(seMap);
+
+    assertEquals(SalariedEmployee.class, emp.getClass()); //exact type match
+
+    verifyNameAndHireDate(emp);
+
+    //downcast reference emp to more specific type SalariedEmployee, to call these methods
+    SalariedEmployee semp = (SalariedEmployee) emp;
+    assertEquals(50000.0, semp.getSalary(), 0.001);
+
+
   }
-  
+
+  private void verifyNameAndHireDate(Employee emp) {
+    assertEquals("Jackie", emp.getName());
+    assertEquals(Date.valueOf("1990-08-24"), emp.getHireDate());
+  }
+
   /**
    * TASK: verify that passing heMap into your factory returns a HourlyEmployee, with all properties set.
    */
+
   @Test
-  public void testCreateEmployeeHourly() {
-    // TODO
+  public void createEmployee_shouldReturnHourlyEmployee_whenTypeHE() {
+    Employee emp = EmployeeFactory.createEmployee(heMap);
+
+    // be sure that 'emp' is really an hourly employee (exactly)
+    assertEquals(HourlyEmployee.class, emp.getClass());
+
+    //TODo: refactor this somehow because it repeated above (bad)
+    // done by right click refactor --> extract method
+    verifyNameAndHireDate(emp);
+
+    //downcast emp to more specific type HourlyEmployee, to call these methods
+    HourlyEmployee hemp = (HourlyEmployee) emp;
+
+    assertEquals(50.0, hemp.getRate(), 0.001);
+    assertEquals(40.0, hemp.getHours(), 0.001);
+
   }
   
   /**
-   * TASK: verify that passing a map with an invalid "type" value results in IllegalArgumentException.
+   * TASK: verify that passing a map with an invalid "type" value results in
+   * IllegalArgumentException.
    * The only valid values for "type" are "HE" or "SE".
    */
-  @Test
-  public void testCreateEmployeeInvalidTypeThrowsIllegalArgumentException() {
+  @Test (expected = IllegalArgumentException.class)
+  public void createEmployee_shouldThrowIllegalArgumentException_whenTypeInvalid() {
     // TODO
+    seMap.put("type", "INVALID");  // calling put() on a map overwrites the row
+    EmployeeFactory.createEmployee(seMap);   // should trigger the exception
+
   }
 }

@@ -22,10 +22,14 @@ public class SalariedEmployeeTest {
         emp = new SalariedEmployee("Logan", Date.valueOf("2020-02-06"), 1500.0);
         emp2 = new SalariedEmployee("Logan", Date.valueOf("2020-02-06"), 1500.0);
     }
-
     @Test
-    public void hashcode_equalsObjectMustHaveEqualHashCodes() {
-        assertEquals(emp.hashCode(), emp2.hashCode());
+    public void hashCode_shouldReturnFalse_whenDifferentHashCode() {
+        assertEquals(emp.hashCode(), emp2.hashCode());  //does and equals() check
+        assertTrue(emp.equals(emp2));  //alternative assertion
+    @Test
+    public void hashCode_shouldReturnTrue_whenAllPropertiesSame() {
+        assertEquals(emp.hashCode(), emp2.hashCode());  //does and equals() check
+        assertTrue(emp.equals(emp2));  //alternative assertion
     }
 
     @Test
@@ -49,7 +53,7 @@ public class SalariedEmployeeTest {
 
     @Test
     public void equals_shouldReturnFalse_differentName_sameHireDate_sameSalary() {
-        emp2.setName("DIFFERENT");
+        emp2.setName("DIF");
         assertNotEquals(emp, emp2);
         assertFalse(emp.equals(emp2));
     }

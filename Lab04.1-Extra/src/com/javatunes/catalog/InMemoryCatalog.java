@@ -90,7 +90,7 @@ public class InMemoryCatalog implements Catalog {
 
 
         for (MusicItem item : catalogData) {
-            if (item.getTitle().equals(keyword) || item.getArtist().equals(keyword) || item.LogetReleaseDate().equals(Date.parse(keyword))) {
+            if (item.getTitle().equals(keyword) || item.getArtist().equals(keyword) || item.getReleaseDate().equals(Date.parse(keyword))) {
                 result.add(item);
             }
 

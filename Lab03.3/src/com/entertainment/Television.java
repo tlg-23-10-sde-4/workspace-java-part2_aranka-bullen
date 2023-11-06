@@ -64,8 +64,8 @@ implements Comparable<Television> {
       this.volume = volume;
     }
     else {
-      throw new IllegalArgumentException("Invalid volume: " + volume + ". " + 
-        "Allowed range: [" + MIN_VOLUME + "," + MAX_VOLUME + "].");
+      throw new IllegalArgumentException(String.format("Invalid Volume: %s. Valid volume are [%s-%s].\n",
+              getVolume(), MIN_VOLUME, MAX_VOLUME));
     }
   }
   
