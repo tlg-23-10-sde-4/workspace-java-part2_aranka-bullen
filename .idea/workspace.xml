@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b4c56fb-b7d3-4215-a782-09f675601450" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DuckRace/ModelViewController.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DuckRace/conf/student-ids.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DuckRace/src/com/duckrace/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DuckRace/src/com/duckrace/BoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab05.3/src/com/javatunes/billing/TaxCalculatorFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab05.2/test/com/javatunes/personnel/EmployeeFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.2/test/com/javatunes/personnel/EmployeeFactoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab05.3/Lab05.3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.3/Lab05.3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DuckRace/com/duckrace/DuckRacer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DuckRace/com/duckrace/DuckRacer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DuckRace/com/duckrace/DuckRacerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DuckRace/com/duckrace/DuckRacerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.3/src/com/javatunes/billing/EuropeTax.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.3/src/com/javatunes/billing/EuropeTax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.3/src/com/javatunes/billing/OnlineTax.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.3/src/com/javatunes/billing/OnlineTax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.3/src/com/javatunes/billing/USATax.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.3/src/com/javatunes/billing/USATax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.3/src/com/javatunes/product/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.3/src/com/javatunes/product/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.3/test/com/javatunes/product/OrderTaxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.3/test/com/javatunes/product/OrderTaxTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,14 +60,20 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Lab05.3" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.javatunes.product" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.javatunes.billing" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.javatunes.catalog" />
@@ -76,98 +81,92 @@
       <recent name="com.javatunes.personnel" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BoardTest">
-    <configuration name="BoardTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.duckrace.BoardTest" />
-      <module name="DuckRace" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DuckRace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.duckrace.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="JUnit.All in Lab05.3">
+    <configuration name="All in Lab05.3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab05.3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab05.2" />
+    <configuration name="EuropeTaxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab05.3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatunes.personnel.*" />
+          <option name="PATTERN" value="com.javatunes.billing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.EmployeeFactoryTest" />
+      <option name="PACKAGE_NAME" value="com.javatunes.billing" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.billing.EuropeTaxTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeFactoryTest.createEmployee_shouldReturnHourlyEmployee_whenTypeHE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab05.2" />
+    <configuration name="OrderTaxTest.testTaxEuropeOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab05.3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatunes.personnel.*" />
+          <option name="PATTERN" value="com.javatunes.product.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.EmployeeFactoryTest" />
-      <option name="METHOD_NAME" value="createEmployee_shouldReturnHourlyEmployee_whenTypeHE" />
+      <option name="PACKAGE_NAME" value="com.javatunes.product" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.product.OrderTaxTest" />
+      <option name="METHOD_NAME" value="testTaxEuropeOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeFactoryTest.createEmployee_shouldReturnSalariedEmployee_whenTypeSE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab05.2" />
+    <configuration name="OrderTaxTest.testTaxUSAOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab05.3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatunes.personnel.*" />
+          <option name="PATTERN" value="com.javatunes.product.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.EmployeeFactoryTest" />
-      <option name="METHOD_NAME" value="createEmployee_shouldReturnSalariedEmployee_whenTypeSE" />
+      <option name="PACKAGE_NAME" value="com.javatunes.product" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.product.OrderTaxTest" />
+      <option name="METHOD_NAME" value="testTaxUSAOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeFactoryTest.createEmployee_shouldThrowIllegalArgumentException_whenTypeInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab05.2" />
+    <configuration name="USATaxTest.testTaxAmountOver20" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab05.3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatunes.personnel.*" />
+          <option name="PATTERN" value="com.javatunes.billing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.EmployeeFactoryTest" />
-      <option name="METHOD_NAME" value="createEmployee_shouldThrowIllegalArgumentException_whenTypeInvalid" />
+      <option name="PACKAGE_NAME" value="com.javatunes.billing" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.billing.USATaxTest" />
+      <option name="METHOD_NAME" value="testTaxAmountOver20" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BoardTest" />
-      <item itemvalue="JUnit.EmployeeFactoryTest" />
-      <item itemvalue="JUnit.EmployeeFactoryTest.createEmployee_shouldReturnHourlyEmployee_whenTypeHE" />
-      <item itemvalue="JUnit.EmployeeFactoryTest.createEmployee_shouldReturnSalariedEmployee_whenTypeSE" />
-      <item itemvalue="JUnit.EmployeeFactoryTest.createEmployee_shouldThrowIllegalArgumentException_whenTypeInvalid" />
+      <item itemvalue="JUnit.EuropeTaxTest" />
+      <item itemvalue="JUnit.OrderTaxTest.testTaxEuropeOrder" />
+      <item itemvalue="JUnit.OrderTaxTest.testTaxUSAOrder" />
+      <item itemvalue="JUnit.USATaxTest.testTaxAmountOver20" />
+      <item itemvalue="JUnit.All in Lab05.3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BoardTest" />
-        <item itemvalue="JUnit.EmployeeFactoryTest" />
-        <item itemvalue="JUnit.EmployeeFactoryTest.createEmployee_shouldReturnHourlyEmployee_whenTypeHE" />
-        <item itemvalue="JUnit.EmployeeFactoryTest.createEmployee_shouldReturnSalariedEmployee_whenTypeSE" />
-        <item itemvalue="JUnit.EmployeeFactoryTest.createEmployee_shouldThrowIllegalArgumentException_whenTypeInvalid" />
+        <item itemvalue="JUnit.All in Lab05.3" />
+        <item itemvalue="JUnit.OrderTaxTest.testTaxUSAOrder" />
+        <item itemvalue="JUnit.USATaxTest.testTaxAmountOver20" />
+        <item itemvalue="JUnit.OrderTaxTest.testTaxEuropeOrder" />
+        <item itemvalue="JUnit.EuropeTaxTest" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699310650239</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="DuckRacer: Iteration 2 (studentIdMap, racerMap)">
+      <created>1699379381030</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699379381030</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,7 +303,8 @@
     <MESSAGE value="Classloader demo (Instructor and Projector)" />
     <MESSAGE value="Lab05.1:  Enum Singleton (IRSEnum and IRs Interface)" />
     <MESSAGE value="Lab05.2: Simple Factory (Employee Factory)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab05.2: Simple Factory (Employee Factory)" />
+    <MESSAGE value="DuckRacer: Iteration 2 (studentIdMap, racerMap)" />
+    <option name="LAST_COMMIT_MESSAGE" value="DuckRacer: Iteration 2 (studentIdMap, racerMap)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
